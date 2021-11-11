@@ -5,6 +5,7 @@ const linksSocialMedia = {
     linkedin: '/in/marcos-vini-984903181',
     facebook: 'Marcos.Code1999',
     instagram: 'marcosviniicode',
+    blog: 'blog',
     
 }
 
