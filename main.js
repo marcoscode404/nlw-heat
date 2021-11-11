@@ -2,10 +2,10 @@
 //lista de objetos
 const linksSocialMedia = {
     github: 'marcoscode404',
-    youtube: 'Renato Cariani',
-    facebook: 'Marcos Vini Code',
+    linkedin: '/in/marcos-vini-984903181',
+    facebook: 'Marcos.Code1999',
     instagram: 'marcosviniicode',
-    twitter: 'marcosssssssss'
+    
 }
 
 
@@ -38,7 +38,7 @@ function getGitHubProfileInfos() {
     .then(response => response.json())
     .then(data => {
         userName.textContent = data.name
-        userBio.textContent = data.bio
+        // userBio.textContent = data.bio
         userLink.href = data.html_url
         UserImage.src = data.avatar_url
         userLogin.textContent = data.login
