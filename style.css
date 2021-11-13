@@ -102,7 +102,7 @@ p {
     
     list-style: none;
     padding: 0;
-    
+    cursor: pointer;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -115,12 +115,12 @@ p {
     align-items: center;
     justify-content: center;
     background-color: rgb(37, 40, 48);
-    height: 2.5rem;
+    height: 2.9rem;
     width: 100%;
 }
 
 .ulSocialLinks li:hover {
-    background-color: rgba(203, 224, 11, 0.2);
+    background-color: rgba(219, 243, 8, 0.2);
 }
 
 
@@ -136,6 +136,9 @@ p {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        margin-left: 5px;
+        margin-right: 5px;
+        
     }
     .container{
         width: 380px;
@@ -152,7 +155,9 @@ p {
 
 @media screen and  (max-width: 420px){
     .principal{
-       
+       margin-top: 10px;
+       margin-left: 5px;
+       margin-right: 5px;
        
     }
     .container{
