@@ -1,150 +1,167 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html,
-body {
-  --black: hsl(240, 6%, 13%);
-  --grey: hsl(240, 9%, 89%);
-
-  height: 100%;
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
+html, body {
+    --black: hsl(240, 6%, 13%);
+    --grey: hsl(240, 9%, 89%);
+  
+    /* height: 100%; */
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  
 }
 
-body {
-  display: grid;
-  place-items: center;
-  /* background:   linear-gradient(to top, #000 50%, #000000 ); */
-  
-  
+/* .body {
+    /* display: grid;
+    place-items: center; */
+ 
+    /* background-color: red; */
+    /* width: 100%;
+    height: 100%; */
+
+main {
+    background: blue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .principal {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  /* background-color: red; */
-  align-items: center;
-  justify-content: center;
+    width: 375px;
+    height: 850px;
+    min-height: 800px;
+    /* background-color: red; */
+    position: absolute;
+    background: url(images/background.svg);
+    background-repeat: no-repeat;
 }
-
-main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 810px;
-  position: absolute;
-
-}
+ 
 
 .container {
-  max-width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  
-
-  color: var(--grey);
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .avatar {
-  width: 10rem;
-  margin: 11.5rem auto 0;
+    width: 10rem;
+    margin: 11.5rem auto 0;
+    margin: 5.5rem auto 0;
+    position: relative;
 
-  position: relative;
 }
 
-.avatar span {
-  position: absolute;
-  top: -15px;
-  z-index: 1;
-}
+/* .avatar spam {
+    position: absolute;
+    top: -15px;
+    z-index: 1;
+} */
 
 .avatar > img {
-  width: 10rem;
-  height: 11.5rem;
-  object-fit: cover;
+    margin-top: 7rem;
+    width: 10rem;
+    height: 11.5rem;
+    object-fit: cover;
 
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25% ) ;
 }
 
 h1 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(218, 233, 12);
+    margin-top: 1.50rem;
 
-  margin-top: 1.50rem;
+}
+h3 {
+    color: #fff;
 }
 
 a {
-  color: var(--grey);
-  text-decoration: none;
-
-  margin-top: 0.25rem;
-
-  display: flex;
-  gap: 0.75rem;
-
-  justify-content: center;
-  align-items: center;
+    color: var(--grey);
+    text-decoration: none;
+    margin-top: 0.25rem;
+    display: flex;
+    gap: 0.65rem;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
-  margin-top: 2rem;
-}
-
-ul {
-  margin-top: 1rem;
-
-  list-style: none;
-  padding: 0;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: flex-start;
-
-  
-}
-
-#socialLinks li:hover{
-  background-color: rgba(203, 224, 11, 0.2);
+    margin-top: 2rem;
 }
 
 
-#socialLinks li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(37, 40, 48);
-  height: 3.5em;
-  width: 100%;
-}
-
-#socialLinks li a img {
- 
-  width: 40px;
-  height: 40px;
-  background-color: rgb(49, 32, 32);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.ulSocialLinks {
+    margin-top: 1rem;
+    
+    list-style: none;
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3rem;
 
 }
 
+.ulSocialLinks li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 40, 48);
+    height: 2.5rem;
+    width: 100%;
+}
 
-@media screen and (max-width: 620px) {
-
-  main {
-  width: 308px;
-  height: 750px;
-  
-  
-
-  }
-
-
+.ulSocialLinks li:hover {
+    background-color: rgba(203, 224, 11, 0.2);
 }
 
 
+@media screen and  (max-width: 620px){
+    main {
+        width: 100%;
+        height: 100%;
+    }
+   
+
+    .principal{
+        height: 47rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .container{
+        width: 380px;
+        
+    }
+
+    .avatar > img {
+        
+        background-color: blue;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and  (max-width: 420px){
+    .principal{
+       
+       
+    }
+    .container{
+        height: 400px;
+    }
+    .ulSocialLinks {
+        width: 100%;
+    }
+    .ulSocialLinks li {
+        width: 100%;
+    }
+}
