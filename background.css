@@ -64,6 +64,12 @@ body{
     
 }
 
+.circles li .ast{
+    width: 100px;
+    height: 100px;
+    animation: animate 25s linear infinite;
+}
+
 .circles li:nth-child(1){
     left: 25%;
     width: 10px;
@@ -129,8 +135,8 @@ body{
 
 .circles li:nth-child(9){
     left: 20%;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     animation-delay: 2s;
     animation-duration: 35s;
     background-color: rgba(229, 255, 0, 0.932);
